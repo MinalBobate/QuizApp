@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 3</title>
+    <link rel="stylesheet" href="style.css">
+    
+       
+    
+</head>
+
+<body id="body">
+    <div class="home_container">
+        <img src="home-logo.png" alt="logo">
+        <h2>Enter your <span>name</span> to proceed</h2>
+        <input type="text" id="myname" placeholder="Enter your name">
+        <button id="submitBtn" type="submit"> Enter </button>
+        <div class=" useforhide hide">
+            <h3>You have <span>60</span> sec to answer all questions.</h3>
+            <h2>Choose topic to continue</h2>
+            <div id="category">
+                <button id="Html" class="home-btn" onclick="startHtmlQuiz()">Html</button>
+                <button id="CSS" class="home-btn" onclick="startCSSQuiz()">CSS</button>
+                <button id="Javascript" class="home-btn" onclick="startJavascriptQuiz()">Javascript</button>
+                <button id="Python" class="home-btn" onclick="startPythonQuiz()">Python</button>
+            </div>
+        </div>
+    </div>
+    <div class="quiz_container hide">
+        <div id="header">
+            <p id="timer">60</p>
+            <p id="quizHead">CSS</p>
+            <p id="scoreClass">Score:<span>0</span></p>
+        </div>
+        <div id="main">
+            <p id="question">Que <span>1</span>. what is the full form of Html</p>
+            <div id="options">
+                <div id="answer1">
+                    <p class=" option " id="option1">option1</p>
+                </div>
+                <div id="answer2">
+                    <p class=" option " id="option2">option2</p>
+                </div>
+                <div id="answer3">
+                    <p class=" option " id="option3">option3</p>
+                </div>
+                <div id="answer4">
+                    <p class=" option " id="option4">option4</p>
+                </div>
+
+            </div>
+            <div id="footer">
+                <button id="endQuiz">End Quiz</button>
+                <button id="next">Next</button>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="result_container hide">
+        <div class="head">
+            <h1 class="heading">Quiz Result</h1>
+        </div>
+        <div class="timeOver hide"><span class="timeOver-text">
+                <h1>Oops! Time is over</h1>
+            </span></div>
+        <div class="scorecard">
+            <p class="show"><b><span id="result_name">XXX</span> your result is:</b></p>
+            <p class="show">Total time taken: <span id="time_taken">60 sec</span></p>
+            <p class="show">Total question: <span id="total_que">10</span></p>
+            <p class="show">Total question attempted: <span id="total_que_attempted"></span></p>
+            <p class="show">Correct: <span id="correct_ans">XXX</span></p>
+            <p class="show">Wrong: <span id="wrong_ans">XXX</span></p>
+            <p class="show">Percentage: <span id="percentage">XXX</span></p>
+        </div>
+        <div class="result-btn">
+            <button id="start_again" class="restart">Play Again</button>
+            <button id="go_to_home" class="home-btn-end" onclick="myHome()">Go to Home</button>
+        </div>
+    </div>
+    <script src="myscript.js"></script>
+
+</body>
+
+</html
